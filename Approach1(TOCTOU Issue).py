@@ -1,7 +1,7 @@
 
-# This implements two thread synchronized with eachother to process tasks.
+# This implements two thread synchronized with eachother to process tasks. But raises below issue.
 
-# This is the Time-of-Check to Time-of-Use (TOCTOU) problem — the time between checking the condition and acting on it is not protected from interference.
+# This raises Time-of-Check to Time-of-Use (TOCTOU) problem — the time between checking the condition and acting on it is not protected from interference.
 
 from threading import Thread
 
